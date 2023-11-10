@@ -1,5 +1,5 @@
 {
-  "name": "typesense-docsearch-react",
+  "name": "@gentrace/typesense-docsearch-react",
   "description": "React package for DocSearch, customized to work with Typesense",
   "version": "3.4.1",
   "license": "MIT",

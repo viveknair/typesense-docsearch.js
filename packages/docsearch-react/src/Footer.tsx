@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { TypesenseLogo } from './TypesenseLogo';
-
 export type FooterTranslations = Partial<{
   selectText: string;
   selectKeyAriaLabel: string;
@@ -47,14 +45,10 @@ export function Footer({ translations = {} }: FooterProps) {
     navigateDownKeyAriaLabel = 'Arrow down',
     closeText = 'to close',
     closeKeyAriaLabel = 'Escape key',
-    searchByText = 'Search by',
   } = translations;
 
   return (
     <>
-      <div className="DocSearch-Logo">
-        <TypesenseLogo translations={{ searchByText }} />
-      </div>
       <ul className="DocSearch-Commands">
         <li>
           <kbd className="DocSearch-Commands-Key">
