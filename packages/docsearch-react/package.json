@@ -1,7 +1,7 @@
 {
   "name": "@gentrace/typesense-docsearch-react",
   "description": "React package for DocSearch, customized to work with Typesense",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "license": "MIT",
   "homepage": "https://typesense.org/docs/latest/guide/docsearch.html",
   "repository": "typesense/docsearch.js",
@@ -15,6 +15,9 @@
       "url": "https://typesense.org"
     }
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "files": [
     "dist/",

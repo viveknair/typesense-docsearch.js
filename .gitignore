@@ -22,3 +22,4 @@ dist/
 # Cypress Video and Screenshots output
 cypress/screenshots/
 cypress/videos/
+.idea
