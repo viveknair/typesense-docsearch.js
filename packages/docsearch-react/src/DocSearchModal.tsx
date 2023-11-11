@@ -4,8 +4,6 @@ import React from 'react';
 
 import { MAX_QUERY_SIZE } from './constants';
 import type { DocSearchProps } from './DocSearch';
-import type { FooterTranslations } from './Footer';
-import { Footer } from './Footer';
 import { Hit } from './Hit';
 import type { ScreenStateTranslations } from './ScreenState';
 import { ScreenState } from './ScreenState';
@@ -24,7 +22,6 @@ import { groupBy, identity, noop, removeHighlightTags } from './utils';
 
 export type ModalTranslations = Partial<{
   searchBox: SearchBoxTranslations;
-  footer: FooterTranslations;
 }> &
   ScreenStateTranslations;
 
@@ -52,7 +49,6 @@ export function DocSearchModal({
   getMissingResultsUrl,
 }: DocSearchModalProps) {
   const {
-    footer: footerTranslations,
     searchBox: searchBoxTranslations,
     ...screenStateTranslations
   } = translations;
@@ -429,10 +425,6 @@ export function DocSearchModal({
             }}
           />
         </div>
-
-        <footer className="DocSearch-Footer">
-          <Footer translations={footerTranslations} />
-        </footer>
       </div>
     </div>
   );
